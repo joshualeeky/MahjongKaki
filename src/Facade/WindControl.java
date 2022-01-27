@@ -1,13 +1,21 @@
 package Facade;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.HashMap;
 
 public class WindControl {
-    static final ImageIcon dongFeng = new ImageIcon("imgs/Dong.jpg");
-    static final ImageIcon nanFeng = new ImageIcon("imgs/Nan.jpg");
-    static final ImageIcon xiFeng = new ImageIcon("imgs/Xi.jpg");
-    static final ImageIcon beiFeng = new ImageIcon("imgs/Bei.jpg");
+    private static ImageIcon scaleImage(String img) {
+        ImageIcon imageIcon = new ImageIcon(img);
+        Image image = imageIcon.getImage(); //
+        Image newImg = image.getScaledInstance(100, 100,  java.awt.Image.SCALE_SMOOTH);
+        return new ImageIcon(newImg);
+    }
+
+    static final ImageIcon dongFeng = scaleImage("imgs/Dong.jpg");
+    static final ImageIcon nanFeng = scaleImage("imgs/Nan.jpg");
+    static final ImageIcon xiFeng = scaleImage("imgs/Xi.jpg");
+    static final ImageIcon beiFeng = scaleImage("imgs/Bei.jpg");
     static final HashMap<Integer, ImageIcon> wind = new HashMap<>() {{
         put(1, dongFeng);
         put(2, nanFeng);

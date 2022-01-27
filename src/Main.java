@@ -8,7 +8,6 @@ public class Main {
 
 /*Todo:
     End of game detection
-    GUI integration of amount remaining
-    More options for the style of play
-    History of money
+    Remove self option for ming gang
+    Change self option to zi mo
 */
