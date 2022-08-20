@@ -21,12 +21,12 @@ public interface LedgerInterface extends GUI {
             ledgerString.append(player.getName()).append(": $").append(player.getMoney()).append(" (")
                     .append(player.getNettDifference()).append(")").append(System.lineSeparator());
         }
-        ledgerString.append("______________________________________________________________");
+        ledgerString.append("_____________________________________________________________________________");
         ledgerString.append(System.lineSeparator());
         for (String entry : Ledger.getLedger()) {
             ledgerString.append(entry).append(System.lineSeparator());
         }
-        JTextArea ledger = new JTextArea(15, 40);
+        JTextArea ledger = new JTextArea(15, 50);
         ledger.append(ledgerString.toString());
         ledger.setEditable(false);
         ledger.setFont(fontMedium2);
@@ -37,7 +37,7 @@ public interface LedgerInterface extends GUI {
         JButton back = new JButton("Back");
         back.setVerticalTextPosition(SwingConstants.NORTH);
         back.setHorizontalTextPosition(SwingConstants.CENTER);
-        back.setPreferredSize(new Dimension(100, 20));
+        back.setPreferredSize(new Dimension(100, 50));
         back.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 frame.remove(ledgerPanel);
@@ -52,7 +52,7 @@ public interface LedgerInterface extends GUI {
         cBack.fill = GridBagConstraints.HORIZONTAL;
         cBack.gridx = 3;
         cBack.gridy = 0;
-        cBack.insets = new Insets(10, 30, 0 ,40);
+        cBack.insets = new Insets(10, 0, 0 ,80);
         ledgerPanel.add(back, cBack);
 
         cLedgerLabel.fill = GridBagConstraints.HORIZONTAL;

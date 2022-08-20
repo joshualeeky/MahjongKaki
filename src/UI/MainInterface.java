@@ -83,7 +83,7 @@ public interface MainInterface extends GUI {
         JButton next = new JButton("Draw with Kang");
         next.setVerticalTextPosition(SwingConstants.NORTH);
         next.setHorizontalTextPosition(SwingConstants.CENTER);
-        next.setPreferredSize(new Dimension(20, 20));
+        next.setPreferredSize(new Dimension(20, 50));
         next.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 frame.remove(buttonPanel);
@@ -97,7 +97,7 @@ public interface MainInterface extends GUI {
         JButton ledger = new JButton("Ledger");
         ledger.setVerticalTextPosition(SwingConstants.NORTH);
         ledger.setHorizontalTextPosition(SwingConstants.CENTER);
-        ledger.setPreferredSize(new Dimension(20, 20));
+        ledger.setPreferredSize(new Dimension(20, 50));
         ledger.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 frame.remove(buttonPanel);
@@ -109,7 +109,7 @@ public interface MainInterface extends GUI {
             JButton undo = new JButton("Undo");
             undo.setVerticalTextPosition(SwingConstants.NORTH);
             undo.setHorizontalTextPosition(SwingConstants.CENTER);
-            undo.setPreferredSize(new Dimension(20, 20));
+            undo.setPreferredSize(new Dimension(20, 50));
             undo.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     frame.remove(buttonPanel);

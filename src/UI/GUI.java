@@ -13,7 +13,7 @@ public interface GUI{
     static void initGUI() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //frame.setSize(800, 480);
-        frame.setSize(1920, 1080);
+        frame.setSize(1112, 834);
         frame.setLayout(new FlowLayout());
         OptionsInterface.GUI();
     }
