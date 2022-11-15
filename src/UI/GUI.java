@@ -12,8 +12,8 @@ public interface GUI{
 
     static void initGUI() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //frame.setSize(800, 480);
-        frame.setSize(1112, 834);
+        //frame.setSize(800, 480); //RaspberryPi
+        frame.setSize(2224, 1168); //iPad Retina Display
         frame.setLayout(new FlowLayout());
         OptionsInterface.GUI();
     }

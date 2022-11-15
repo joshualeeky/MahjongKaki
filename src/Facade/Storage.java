@@ -13,7 +13,7 @@ public class Storage {
     private static final HashMap<Integer, Player> players = new HashMap<>();
     private static final ArrayList <Player> playerList = new ArrayList<>();
     private static final String[] family = {" ", "Dad", "Mum", "Joel", "Jillian", "Joshua", "Sze"};
-    private static final String[] NCMU8 = {" ", "Elgin", "Jerry", "Joshua", "Jun Xiong", "Tarasvin", "Victoria"};
+    private static final String[] NCMU8 = {" ", "Elgin", "Jerry", "Joshua", "Jun Xiong", "Sze", "Tarasvin", "Victoria"};
     private static final String[] listOfPlayers = NCMU8;
     private static final String[] styles = {"0.20/0.40", "3/6 half", "3/6"};
 

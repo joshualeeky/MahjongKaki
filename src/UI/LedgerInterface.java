@@ -21,7 +21,7 @@ public interface LedgerInterface extends GUI {
             ledgerString.append(player.getName()).append(": $").append(player.getMoney()).append(" (")
                     .append(player.getNettDifference()).append(")").append(System.lineSeparator());
         }
-        ledgerString.append("_____________________________________________________________________________");
+        ledgerString.append("______________________________________________________________________________");
         ledgerString.append(System.lineSeparator());
         for (String entry : Ledger.getLedger()) {
             ledgerString.append(entry).append(System.lineSeparator());
@@ -52,7 +52,7 @@ public interface LedgerInterface extends GUI {
         cBack.fill = GridBagConstraints.HORIZONTAL;
         cBack.gridx = 3;
         cBack.gridy = 0;
-        cBack.insets = new Insets(10, 0, 0 ,80);
+        cBack.insets = new Insets(10, 0, 0 ,30);
         ledgerPanel.add(back, cBack);
 
         cLedgerLabel.fill = GridBagConstraints.HORIZONTAL;

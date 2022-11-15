@@ -179,8 +179,8 @@ public interface MainInterface extends GUI {
         buttonPanel.add(ledger, cLedger);
 
         cLastEntry.fill = GridBagConstraints.HORIZONTAL;
-        cLastEntry.gridx = 1;
-        cLastEntry.gridwidth = 2;
+        cLastEntry.gridx = 0;
+        cLastEntry.gridwidth = 4;
         cLastEntry.gridy = 3;
         cLastEntry.insets = new Insets(0, 0, 20 ,0);
         buttonPanel.add(lastEntry, cLastEntry);
